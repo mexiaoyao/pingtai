@@ -19,10 +19,6 @@ export default {
   methods: {
     changeLocale() {
         this.$i18n.locale = this.$i18n.locale === 'zh' ? 'en' : 'zh';
-        this.setLocale(this.$i18n.locale);
-    },
-    setLocale(state, locale){
-      state.locale = locale;
     },
   }
 }

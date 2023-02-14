@@ -6,7 +6,7 @@
     </a-button>
     <a-icon type="stock" />
     <a-space>
-    Space
+      {{$t("close")}}
     <a-button type="primary">Button</a-button>
     <a-upload>
       <a-button> <a-icon type="upload" /> Click to Upload </a-button>
