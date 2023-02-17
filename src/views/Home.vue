@@ -2,19 +2,19 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <span @click="changeLocale()">语言切换</span>
-    {{$t("open")}}
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    {{$t("open")}}--{{$t("close")}}
+    <MoreStar/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import MoreStar from '@/components/moreStar.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    MoreStar
   },
   methods: {
     changeLocale() {
