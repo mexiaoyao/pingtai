@@ -168,7 +168,6 @@ export default {
   .homeFont{
     position:absolute;
     width:500px;
-    height:180px;
     top:calc(50% + 80px);
     left: calc(50% - 250px);
     color:#FFF;
