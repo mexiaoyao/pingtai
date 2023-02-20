@@ -1,6 +1,6 @@
 <template>
   <div class="starBody">
-      <div class="star" ref="starsRef"></div>
+      <!-- <div class="star" ref="starsRef"></div> -->
       <div class="meteor" ref="metreorRef" v-for="(item, index) in meteors" :key="index"></div>
   </div>
 </template>
@@ -14,8 +14,8 @@ export default {
   data() {
     return {
       starts: 333, // 页面中全体星星个数
-      starWidth: document.body.clientWidth, //黑夜边框
-      starHeight: document.body.clientheight, //黑夜边框
+      starWidth: 1920, //黑夜边框
+      starHeight: 1080, //黑夜边框
       meteors: 100,  // 流星个数
     }
   },
@@ -23,7 +23,15 @@ export default {
 
   },
   mounted() {
-    this.createStar();
+    this.starWidth = document.body.clientWidth;
+    this.starHeight = document.body.clientHeight;
+    window.onresize = () => {
+      return (() => {
+        this.starWidth = document.body.clientWidth;
+        this.starHeight = document.body.clientHeight;
+      })();
+    };
+    //this.createStar();
     this.createmetreor();
   },
   methods: {
@@ -78,10 +86,9 @@ export default {
   overflow: hidden;
   margin: 0px auto;
   position: relative;
-  background-image: radial-gradient(ellipse at top , #050b12 0%,  #181b25 100%);
   .star {
-    width: 1px;
-    height: 1px;
+    width: 2px;
+    height: 2x;
     background: transparent;
   }
   .meteor{
@@ -97,8 +104,6 @@ export default {
     width: 100%;
     height: 100%;
     background: rgba(#fff,1);
-    //box-shadow: 2px 2px 2px 3px #fff; 
-    //box-shadow: h-shadow(必需的。水平阴影的位置。允许负值) v-shadow(必需的。垂直阴影的位置。允许负值) blur(可选。模糊距离) spread(可选。阴影的大小) color(可选。阴影的颜色) inset(可选。从外层的阴影（开始时）改变阴影内侧阴影);
   }
 }
 </style>

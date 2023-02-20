@@ -10,7 +10,9 @@ export default {
   props: {
     backColorList:{
       type: Array,
-      default: []
+      default () {
+        return []
+      }
     }
   },
   methods: {

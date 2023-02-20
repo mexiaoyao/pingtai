@@ -7,7 +7,7 @@ import i18n from './locales';
 
 import 'ant-design-vue/dist/antd.css';
 
-console.log('版本:'+ require('../package.json').version)
+//console.log('版本:'+ require('../package.json').version)
 
 //开发环境下，Vue 会提供很多警告来帮你对付常见的错误与陷阱。 而在生产环境下，这些警告语句却没有...
 Vue.config.productionTip = false
