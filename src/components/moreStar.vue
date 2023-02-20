@@ -14,10 +14,13 @@ export default {
   data() {
     return {
       starts: 333, // 页面中全体星星个数
-      starWidth: 600, //黑夜边框
-      starHeight: 600, //黑夜边框
+      starWidth: document.body.clientWidth, //黑夜边框
+      starHeight: document.body.clientheight, //黑夜边框
       meteors: 100,  // 流星个数
     }
+  },
+  computed: {
+
   },
   mounted() {
     this.createStar();
@@ -56,13 +59,13 @@ export default {
 @keyframes meteorAnim {
   0% {
     opacity: 1;
-    margin-top: 600px;
+    margin-top: 100%;
   }
   12% {
     opacity: 0;
   }
   15% {
-    margin-top: -300px;
+    margin-top: -50%;
     opacity: 0;
   }
   100% {
@@ -70,9 +73,8 @@ export default {
   }
 }
 .starBody{
-  width: 600px;
-  height: 600px;
-  border: 1px solid #CCC;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   margin: 0px auto;
   position: relative;
@@ -88,16 +90,12 @@ export default {
     height: 3px;
     top: 10px;
     left:30px;
-    //transform: rotate(-45deg);
-    //background-color: #FFF;
-    //background-image: linear-gradient(to right, #fff, rgba(255,255,255,0));
   }
   .meteor::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 50%;
     background: rgba(#fff,1);
     //box-shadow: 2px 2px 2px 3px #fff; 
     //box-shadow: h-shadow(必需的。水平阴影的位置。允许负值) v-shadow(必需的。垂直阴影的位置。允许负值) blur(可选。模糊距离) spread(可选。阴影的大小) color(可选。阴影的颜色) inset(可选。从外层的阴影（开始时）改变阴影内侧阴影);

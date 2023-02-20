@@ -1,20 +1,19 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <span @click="changeLocale()">语言切换</span>
-    {{$t("open")}}--{{$t("close")}}
     <MoreStar/>
+    <LetterTable/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 import MoreStar from '@/components/moreStar.vue'
+import LetterTable from '@/components/LetterTable.vue'
 
 export default {
   name: 'home',
   components: {
-    MoreStar
+    MoreStar,
+    LetterTable
   },
   methods: {
     changeLocale() {
@@ -23,3 +22,9 @@ export default {
   }
 }
 </script>
+<style scoped lang="less">
+.home{
+  width:100%;
+  height:100%;
+}
+</style>
