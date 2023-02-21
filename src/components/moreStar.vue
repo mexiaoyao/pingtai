@@ -85,12 +85,9 @@ export default {
   height: 100%;
   overflow: hidden;
   margin: 0px auto;
-  position: relative;
-  .star {
-    width: 2px;
-    height: 2x;
-    background: transparent;
-  }
+  position: absolute;
+  top: 0px;
+  left:0px;
   .meteor{
     position: absolute;
     width: 5px;
