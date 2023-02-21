@@ -72,6 +72,10 @@ export default {
     margin-top: -50%;
     opacity: 0;
   }
+  50% {
+    margin-top: -80%;
+    opacity: 0;
+  }
   100% {
     opacity: 0;
   }
