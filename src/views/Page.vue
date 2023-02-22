@@ -9,17 +9,19 @@
 
     </a-row>
     <a-row class="footer">
-
+      <footer-box />
     </a-row>
   </div>
 </template>
 
 <script>
 import HeaderBox from '@/components/header'
+import FooterBox from '@/components/footer'
 export default {
   name: 'page',
   components: {
-    HeaderBox
+    HeaderBox,
+    FooterBox
   },
   data() {
     return {
@@ -60,7 +62,7 @@ export default {
 
   .footer {
     width: 100%;
-    height: 120px;
+    height: 160px;
     position: absolute;
     left: 0px;
     bottom: 0px;
