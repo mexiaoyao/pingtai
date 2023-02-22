@@ -146,7 +146,8 @@ export default {
 </script>
 <style scoped lang="less">
 .letter {
-  width:calc(94% / 3); height:100%;
+  width:calc(94% / 3); 
+  height:100%;
   float:left;
   margin:0px 1%;
 }

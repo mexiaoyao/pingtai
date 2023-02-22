@@ -6,7 +6,7 @@
     <div class="homeFont">
       I SEE you in a new web
     </div>
-    <div class="enterBox">
+    <div class="enterBox" @click="$router.push('/page')">
       <div class="buttonSelf">
         Enter<a-divider type="vertical" :dashed="true" style="border: 1px dashed #FFF;" /><a-icon type="arrow-right" style="font-size: 16px;" />
       </div>
@@ -27,14 +27,6 @@ export default {
   components: {
     LetterTable
   },
-  data(){
-    return {
-    }
-  },
-  created() {
-  },
-  methods: {
-  }
 }
 </script>
 <style scoped lang="less">
