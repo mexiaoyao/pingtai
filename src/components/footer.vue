@@ -7,7 +7,7 @@
             <div class="log">
               <letter-table />
             </div>
-            <div class="f_S_16 l_h_32 f_f_wryh">
+            <div class="f_S_16 l_h_32 f_f_wryh c_white">
               I SEE you in a new web
             </div>
           </div>

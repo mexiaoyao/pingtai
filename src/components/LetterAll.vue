@@ -1,5 +1,5 @@
 <template>
-  <div style="width:100%; height:100%">
+  <div class="w_100_p h_100_p">
     <div class="letter"><LetterTable :backColorList="cCss"/></div>
     <div class="letter"><LetterTable :backColorList="sCss"/></div>
     <div class="letter"><LetterTable :backColorList="uCss"/></div>

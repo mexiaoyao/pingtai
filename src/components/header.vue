@@ -3,7 +3,7 @@
     <div class="log">
       <letter-table />
     </div>
-    <div class="logDes">
+    <div class="f_S_16 l_h_32 f_f_wryh c_white">
       I SEE you in a new web
     </div>
   </div>
@@ -24,13 +24,12 @@ export default {
   .log {
     width: 160px;
     height: 80px;
-    margin: 20px 0px 10px 20px;
+    margin: 0px;
   }
 
-  .logDes {
+  .log_des {
     font: 16px/32px "微软雅黑";
     color: #FFF;
-    margin-left: 15px;
   }
 }
 </style>

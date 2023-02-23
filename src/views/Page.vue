@@ -7,32 +7,31 @@
     </a-row>
     <a-row class="content">
       <a-col :span="6">
-        <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
-          <a-list-item><span class="c_white">Letter from C3U</span></a-list-item>
-          <a-list-item><span class="c_white">Philosophy</span></a-list-item>
-          <a-list-item><span class="c_white">About</span></a-list-item>
-        </a-list>
+        <div class="m_l_20">
+          <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
+            <a-list-item><h2 class="c_white">Letter from C3U</h2></a-list-item>
+            <a-list-item><h2 class="c_white">Philosophy</h2></a-list-item>
+            <a-list-item><h2 class="c_white">About</h2></a-list-item>
+          </a-list>
 
-        <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
-          <a-list-item><span class="c_white">Twitter</span></a-list-item>
-          <a-list-item><span class="c_white">WeChat</span></a-list-item>
-          <a-list-item><span class="c_white">Contact</span></a-list-item>
-        </a-list>
+          <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
+            <a-list-item><h2 class="c_white">Twitter</h2></a-list-item>
+            <a-list-item><h2 class="c_white">WeChat</h2></a-list-item>
+            <a-list-item><h2 class="c_white">Contact</h2></a-list-item>
+          </a-list>
+        </div>
       </a-col>
       <a-col :span="18">
         <a-row>
           <a-carousel>
-            <div>
-              <h3>1</h3>
+            <div class="w_100_p h_100_p carousel">
+              <img :src="banner01">
             </div>
-            <div>
-              <h3>2</h3>
+            <div class="w_100_p h_100_p carousel">
+              <img :src="banner01">
             </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
+            <div class="w_100_p h_100_p carousel">
+              <img :src="banner01">
             </div>
           </a-carousel>
         </a-row>
@@ -77,6 +76,7 @@ export default {
   },
   data() {
     return {
+      banner01: require('@/assets/images/banner.jpg'),
     }
   },
   created() {
@@ -110,6 +110,13 @@ export default {
     position: absolute;
     left: 0px;
     top: 120px;
+
+    .carousel{
+      img{
+        width:100%;
+        height:100%;
+      }
+    }
 
     .ant-carousel ::deep .slick-slide {
       text-align: center;

@@ -1,5 +1,5 @@
 <template>
-  <div class="LetterTableBox">
+  <div class="letter_box w_100_p h_100_p">
     <div class="box" v-for="i in 35" :key="i" :style="{backgroundColor:backColor(i)}"></div>
   </div>
 </template>
@@ -29,13 +29,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
-.LetterTableBox{
-  width: 100%;
-  height: 100%;
+.letter_box{
   .box{
     width: 20%;
     height: calc(100% / 7);
     float: left;
+    margin:0px;
+    padding:0px;
   }
 }
 </style>
