@@ -6,7 +6,59 @@
       </div>
     </a-row>
     <a-row class="content">
+      <a-col :span="6">
+        <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
+          <a-list-item><span class="whileColor">Letter from C3U</span></a-list-item>
+          <a-list-item><span class="whileColor">Philosophy</span></a-list-item>
+          <a-list-item><span class="whileColor">About</span></a-list-item>
+        </a-list>
 
+        <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
+          <a-list-item><span class="whileColor">Twitter</span></a-list-item>
+          <a-list-item><span class="whileColor">WeChat</span></a-list-item>
+          <a-list-item><span class="whileColor">Contact</span></a-list-item>
+        </a-list>
+      </a-col>
+      <a-col :span="18">
+        <a-row>
+          <a-carousel>
+            <div>
+              <h3>1</h3>
+            </div>
+            <div>
+              <h3>2</h3>
+            </div>
+            <div>
+              <h3>3</h3>
+            </div>
+            <div>
+              <h3>4</h3>
+            </div>
+          </a-carousel>
+        </a-row>
+        <a-row :gutter="[16, 16]">
+          <a-col :span="12">
+            <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
+              <a-list-item><span
+                  class="whileColor">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+              <a-list-item><span
+                  class="whileColor">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+              <a-list-item><span
+                  class="whileColor">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+            </a-list>
+          </a-col>
+          <a-col :span="12">
+            <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
+              <a-list-item><span
+                  class="whileColor">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+              <a-list-item><span
+                  class="whileColor">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+              <a-list-item><span
+                  class="whileColor">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+            </a-list>
+          </a-col>
+        </a-row>
+      </a-col>
     </a-row>
     <a-row class="footer">
       <footer-box />
@@ -58,6 +110,22 @@ export default {
     position: absolute;
     left: 0px;
     top: 120px;
+
+    .whileColor {
+      color: #FFF;
+    }
+
+    .ant-carousel ::deep .slick-slide {
+      text-align: center;
+      height: 160px;
+      line-height: 160px;
+      background: #364d79;
+      overflow: hidden;
+    }
+
+    .ant-carousel ::deep .slick-slide h3 {
+      color: #fff;
+    }
   }
 
   .footer {
