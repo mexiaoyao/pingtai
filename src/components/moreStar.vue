@@ -1,5 +1,5 @@
 <template>
-  <div class="starBody">
+  <div class="star_body">
       <div class="meteor" ref="metreorRef" v-for="(item, index) in meteors" :key="index"></div>
   </div>
 </template>
@@ -51,6 +51,7 @@ export default {
         item.style.left = `${v}%`;
         item.style.top = `${h}px`;
         let num = Math.trunc(Math.random() * 6);
+        //item.setAttribute("class","")
         item.style.backgroundColor = this.colorList[num];
         item.style.animation = `meteorAnim ${time}s linear  infinite`
       })
@@ -80,7 +81,7 @@ export default {
     opacity: 0;
   }
 }
-.starBody{
+.star_body{
   width: 100%;
   height: 100%;
   overflow: hidden;

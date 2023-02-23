@@ -8,15 +8,15 @@
     <a-row class="content">
       <a-col :span="6">
         <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
-          <a-list-item><span class="whileColor">Letter from C3U</span></a-list-item>
-          <a-list-item><span class="whileColor">Philosophy</span></a-list-item>
-          <a-list-item><span class="whileColor">About</span></a-list-item>
+          <a-list-item><span class="c_white">Letter from C3U</span></a-list-item>
+          <a-list-item><span class="c_white">Philosophy</span></a-list-item>
+          <a-list-item><span class="c_white">About</span></a-list-item>
         </a-list>
 
         <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
-          <a-list-item><span class="whileColor">Twitter</span></a-list-item>
-          <a-list-item><span class="whileColor">WeChat</span></a-list-item>
-          <a-list-item><span class="whileColor">Contact</span></a-list-item>
+          <a-list-item><span class="c_white">Twitter</span></a-list-item>
+          <a-list-item><span class="c_white">WeChat</span></a-list-item>
+          <a-list-item><span class="c_white">Contact</span></a-list-item>
         </a-list>
       </a-col>
       <a-col :span="18">
@@ -40,21 +40,21 @@
           <a-col :span="12">
             <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
               <a-list-item><span
-                  class="whileColor">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+                  class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
               <a-list-item><span
-                  class="whileColor">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+                  class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
               <a-list-item><span
-                  class="whileColor">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+                  class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
             </a-list>
           </a-col>
           <a-col :span="12">
             <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
               <a-list-item><span
-                  class="whileColor">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+                  class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
               <a-list-item><span
-                  class="whileColor">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+                  class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
               <a-list-item><span
-                  class="whileColor">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+                  class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
             </a-list>
           </a-col>
         </a-row>
@@ -110,10 +110,6 @@ export default {
     position: absolute;
     left: 0px;
     top: 120px;
-
-    .whileColor {
-      color: #FFF;
-    }
 
     .ant-carousel ::deep .slick-slide {
       text-align: center;

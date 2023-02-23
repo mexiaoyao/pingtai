@@ -2,37 +2,37 @@
   <div class="page">
     <a-row :gutter="[16, 16]">
       <a-col :span="4">
-        <div class="logBorder">
-          <div class="logBox">
+        <div class="log_h1 b_top_border b_bottom_border">
+          <div class="log_box">
             <div class="log">
               <letter-table />
             </div>
-            <div class="logDes">
+            <div class="f_S_16 l_h_32 f_f_wryh">
               I SEE you in a new web
             </div>
           </div>
         </div>
       </a-col>
       <a-col :span="20">
-        <div class="logBorder">
+        <div class="log_h1 b_top_border b_bottom_border">
           <a-col :span="6">
             <a-list :grid="{ gutter: 16, column: 1 }" :data-source="data1" :bordered="false">
               <a-list-item slot="renderItem" slot-scope="item">
-                <span class="whileColor">{{ item.title }}</span>
+                <span class="c_white">{{ item.title }}</span>
               </a-list-item>
             </a-list>
           </a-col>
           <a-col :span="6">
             <a-list :grid="{ gutter: 16, column: 1 }" :data-source="data2" :bordered="false">
               <a-list-item slot="renderItem" slot-scope="item">
-                <span class="whileColor">{{ item.title }}</span>
+                <span class="c_white">{{ item.title }}</span>
               </a-list-item>
             </a-list>
           </a-col>
           <a-col :span="6">
             <a-list :grid="{ gutter: 16, column: 1 }" :data-source="data3" :bordered="false">
               <a-list-item slot="renderItem" slot-scope="item">
-                <span class="whileColor">{{ item.title }}</span>
+                <span class="c_white">{{ item.title }}</span>
               </a-list-item>
             </a-list>
           </a-col>
@@ -78,16 +78,10 @@ export default {
   height: 100%;
   position: relative;
 
-  .logBorder {
-    border-top: 1px solid #CCC;
-    border-bottom: 1px solid #CCC;
+  .log_h1 {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-  }
-
-  .whileColor {
-    color: #FFF;
   }
 
   .ewm {
@@ -95,7 +89,7 @@ export default {
     max-height: 120px;
   }
 
-  .logBox {
+  .log_box {
     width: 100%;
     height: 100%;
 
@@ -103,12 +97,6 @@ export default {
       width: 160px;
       height: 80px;
       margin: 20px 0px 10px 20px;
-    }
-
-    .logDes {
-      font: 16px/32px "微软雅黑";
-      color: #FFF;
-      margin-left: 15px;
     }
   }
 }
