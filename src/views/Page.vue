@@ -6,57 +6,59 @@
       </div>
     </a-row>
     <a-row class="content">
-      <a-col :span="6">
-        <div class="m_l_20">
-          <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
+      <a-col :span="6" class="h_100_p">
+        <div class="w_100_p h_100_p ov-y ov-x">
+          <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false" class="m_l_20">
             <a-list-item><h2 class="c_white">Letter from C3U</h2></a-list-item>
             <a-list-item><h2 class="c_white">Philosophy</h2></a-list-item>
             <a-list-item><h2 class="c_white">About</h2></a-list-item>
           </a-list>
 
-          <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
+          <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false" class="m_l_20">
             <a-list-item><h2 class="c_white">Twitter</h2></a-list-item>
             <a-list-item><h2 class="c_white">WeChat</h2></a-list-item>
             <a-list-item><h2 class="c_white">Contact</h2></a-list-item>
           </a-list>
         </div>
       </a-col>
-      <a-col :span="18">
-        <a-row>
-          <a-carousel>
-            <div class="w_100_p h_100_p carousel">
-              <img :src="banner01">
-            </div>
-            <div class="w_100_p h_100_p carousel">
-              <img :src="banner01">
-            </div>
-            <div class="w_100_p h_100_p carousel">
-              <img :src="banner01">
-            </div>
-          </a-carousel>
-        </a-row>
-        <a-row :gutter="[16, 16]">
-          <a-col :span="12">
-            <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
-              <a-list-item><span
-                  class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
-              <a-list-item><span
-                  class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
-              <a-list-item><span
-                  class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
-            </a-list>
-          </a-col>
-          <a-col :span="12">
-            <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
-              <a-list-item><span
-                  class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
-              <a-list-item><span
-                  class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
-              <a-list-item><span
-                  class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
-            </a-list>
-          </a-col>
-        </a-row>
+      <a-col :span="18" class="h_100_p">
+        <div class="w_100_p h_100_p ov-y ov-x">
+          <a-row>
+            <a-carousel>
+              <div class="w_100_p h_100_p carousel">
+                <img :src="banner01">
+              </div>
+              <div class="w_100_p h_100_p carousel">
+                <img :src="banner01">
+              </div>
+              <div class="w_100_p h_100_p carousel">
+                <img :src="banner01">
+              </div>
+            </a-carousel>
+          </a-row>
+          <a-row :gutter="[16, 16]">
+            <a-col :span="12">
+              <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
+                <a-list-item><span
+                    class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+                <a-list-item><span
+                    class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+                <a-list-item><span
+                    class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+              </a-list>
+            </a-col>
+            <a-col :span="12">
+              <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
+                <a-list-item><span
+                    class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+                <a-list-item><span
+                    class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+                <a-list-item><span
+                    class="c_white">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></a-list-item>
+              </a-list>
+            </a-col>
+          </a-row>
+        </div>
       </a-col>
     </a-row>
     <a-row class="footer">
@@ -106,7 +108,7 @@ export default {
 
   .content {
     width: 100%;
-    height: calc(100% -240px);
+    height: calc(100% - 280px);
     position: absolute;
     left: 0px;
     top: 120px;
