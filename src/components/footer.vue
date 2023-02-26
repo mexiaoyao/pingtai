@@ -7,7 +7,7 @@
             <div class="log">
               <letter-table />
             </div>
-            <div class="f_S_16 l_h_32 f_f_wryh c_white">
+            <div class="f_S_16 l_h_32 f_f_wryh c_white f_t_c">
               I SEE you in a new web
             </div>
           </div>
@@ -18,7 +18,7 @@
           <a-col :span="6">
             <a-list :grid="{ gutter: 16, column: 1 }" :data-source="data1" :bordered="false">
               <a-list-item slot="renderItem" slot-scope="item">
-                <span class="c_white">{{ item.title }}</span>
+                <span class="c_white cursor-por" @click="gotUrl(item.url)">{{ item.title }}</span>
               </a-list-item>
             </a-list>
           </a-col>
@@ -42,6 +42,19 @@
         </div>
       </a-col>
     </a-row>
+    <a-row :gutter="[16, 0]">
+      <a-col :span="4">
+          <div class="c_white f_S_16">我国春播开始最早的地区</div>
+        </a-col>
+        <a-col :span="20">
+          <a-col :span="12">
+            <div class="c_white f_S_16">http://www.baidu.com</div>
+          </a-col>
+          <a-col :span="12">
+            <div class="c_white f_S_16 f_t_r">Copy @52 我的公司</div>
+          </a-col>
+        </a-col>
+    </a-row>
   </div>
 </template>
 
@@ -53,9 +66,9 @@ export default {
   data() {
     return {
       data1: [
-        { title: "Letter from C3U" },
-        { title: 'Philosophry' },
-        { title: 'aoubt' },
+        { title: "Letter from C3U", url:"/page" },
+        { title: 'Philosophry', url:"/pli" },
+        { title: 'aoubt', url:"/about" },
       ],
       data2: [
         { title: '+86 177 2449 4277' },
@@ -69,6 +82,11 @@ export default {
       ],
       ewm: require('@/assets/images/code.jpg'),
     }
+  },
+  methods: {
+    gotUrl(url){
+      this.$router.push(url);
+    }
   }
 }
 </script>
@@ -81,7 +99,7 @@ export default {
   .log_h1 {
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
+    display: inline-table;
   }
 
   .ewm {
@@ -95,8 +113,8 @@ export default {
 
     .log {
       width: 160px;
-      height: 80px;
-      margin: 20px 0px 10px 20px;
+      height: 78px;
+      margin: 16px 0px 10px calc(100% - 80%);
     }
   }
 }

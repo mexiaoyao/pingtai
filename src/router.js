@@ -18,5 +18,15 @@ export default new Router({
       name: "page",
       component: () => import("./views/Page.vue"),
     },
+    {
+      path: "/pli",
+      name: "pli",
+      component: () => import("./views/pli.vue"),
+    },
+    {
+      path: "/about",
+      name: "about",
+      component: () => import("./views/About.vue"),
+    },
   ],
 });

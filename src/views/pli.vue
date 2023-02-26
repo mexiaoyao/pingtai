@@ -11,17 +11,17 @@
           <a-row class="title"><li-cor :list="[1,3]" /></a-row>
           <a-row class="m_t_15">
             <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false" class="m_l_20">
-              <a-list-item><h2 class="c_white cursor-por">Letter from C3U</h2></a-list-item>
-              <a-list-item><h2 class="c_white cursor-por" @click="gotUrl('/pli')">Philosophy</h2></a-list-item>
-              <a-list-item><h2 class="c_white cursor-por" @click="gotUrl('/about')">About</h2></a-list-item>
+              <a-list-item><h2 class="c_white" @click="gotUrl('/page')">Letter from C3U</h2></a-list-item>
+              <a-list-item><h2 class="c_white">Philosophy</h2></a-list-item>
+              <a-list-item><h2 class="c_white" @click="gotUrl('/about')">About</h2></a-list-item>
             </a-list>
           </a-row>
           <a-row class="title"><li-cor :list="[1,3]" /></a-row>
           <a-row class="m_t_15">
             <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
-              <a-list-item><p class="c_white"><a-icon type="twitter" /> Twitter</p></a-list-item>
-              <a-list-item><p class="c_white"><a-icon type="wechat" /> WeChat</p></a-list-item>
-              <a-list-item><p class="c_white"><a-icon type="qq" /> Contact</p></a-list-item>
+              <a-list-item><p class="c_white cursor-por"><a-icon type="twitter" /> Twitter</p></a-list-item>
+              <a-list-item><p class="c_white cursor-por"><a-icon type="wechat" /> WeChat</p></a-list-item>
+              <a-list-item><p class="c_white cursor-por"><a-icon type="qq" /> Contact</p></a-list-item>
             </a-list>
           </a-row>
         </vue-scroll>
