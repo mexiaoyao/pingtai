@@ -1,6 +1,6 @@
 <template>
   <div class="logBox">
-    <div class="log">
+    <div class="log_head m_l_05">
       <letter-table />
     </div>
     <div class="f_S_16 l_h_20 f_f_wryh c_white">
@@ -21,7 +21,7 @@ export default {
   width: 100%;
   height: 100%;
 
-  .log {
+  .log_head {
     width: 160px;
     height: calc(100% - 20px);
   }
