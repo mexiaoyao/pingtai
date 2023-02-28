@@ -41,17 +41,9 @@
       <a-col :span="18" class="h_100_p">
         <vue-scroll :ops="ops" class="w_100_p h_100_p">
           <a-row>
-            <a-carousel>
-              <div class="w_100_p h_100_p carousel">
-                <img :src="banner01">
-              </div>
-              <div class="w_100_p h_100_p carousel">
-                <img :src="banner01">
-              </div>
-              <div class="w_100_p h_100_p carousel">
-                <img :src="banner01">
-              </div>
-            </a-carousel>
+            <div style="width:500px; height:100px;">
+              <about />
+            </div>
           </a-row>
           <a-row :gutter="[16, 16]">
             <a-col :span="12">
@@ -78,11 +70,13 @@
 <script>
 import HeaderBox from '@/components/header'
 import LiCor from '@/components/liColor'
+import About from '@/components/letter/About'
 export default {
   name: 'page',
   components: {
     HeaderBox,
-    LiCor
+    LiCor,
+    About
   },
   data() {
     return {

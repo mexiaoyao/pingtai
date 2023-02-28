@@ -20,7 +20,7 @@
 
 <script>
 import cellMixins from './mixins/index';
-import Cell from './cell.vue'
+import Cell from './Cell.vue'
 export default {
   name: 'c3u',
   mixins: [cellMixins],
