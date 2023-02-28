@@ -1,7 +1,7 @@
 <template>
-  <div class="logBox">
+  <div class="log_box">
     <div class="log_head m_l_05">
-      <letter-table />
+      <C3u />
     </div>
     <div class="f_S_16 l_h_20 f_f_wryh c_white">
       I SEE you in a new web
@@ -10,14 +10,14 @@
 </template>
 
 <script>
-import LetterTable from './LetterAll.vue'
+import C3u from '@/components/letter/C3U.vue'
 export default {
   name: "page",
-  components: { LetterTable },
+  components: { C3u },
 };
 </script>
 <style scoped lang="less">
-.logBox {
+.log_box {
   width: 100%;
   height: 100%;
 
