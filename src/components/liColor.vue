@@ -10,7 +10,7 @@ export default {
     list:{
       type:Array,
       default:()=>{
-        return [1,2,3]
+        return [1, 3, 2]
       }
     }
   },

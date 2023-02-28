@@ -8,21 +8,21 @@
     <a-row class="content">
       <a-col :span="6" class="h_100_p">
         <vue-scroll :ops="ops" class="w_100_p h_100_p">
-          <a-row class="title"><li-cor :list="[1, 3]" /></a-row>
+          <a-row class="title"><li-cor :list="[1, 3, 2]" /></a-row>
           <a-row class="m_t_15">
             <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false" class="m_l_20">
               <a-list-item>
                 <h2 class="c_white cursor-por">Letter from C3U</h2>
               </a-list-item>
               <a-list-item>
-                <h2 class="c_white cursor-por" @click="gotUrl('/pli')">Philosophy</h2>
+                <h2 class="c_white cursor-por">Philosophy</h2>
               </a-list-item>
               <a-list-item>
-                <h2 class="c_white cursor-por" @click="gotUrl('/about')">About</h2>
+                <h2 class="c_white cursor-por">About</h2>
               </a-list-item>
             </a-list>
           </a-row>
-          <a-row class="title"><li-cor :list="[1, 3]" /></a-row>
+          <a-row class="title"><li-cor :list="[1, 3, 2]" /></a-row>
           <a-row class="m_t_15">
             <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
               <a-list-item>
@@ -166,8 +166,8 @@ export default {
     padding: 0px 3%;
 
     .title {
-      width: 5px;
-      height: 10px;
+      width: 10px;
+      height: 18px;
     }
 
     .carousel {

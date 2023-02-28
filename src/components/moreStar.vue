@@ -47,7 +47,7 @@ export default {
       metreorRef.forEach((item) => {
         let v = Math.floor(Math.random() * 100);
         let h = Math.floor(Math.random() * 100);
-        let time = Math.floor(Math.random() * 800 + 2); //速度 值越大越慢
+        let time = Math.floor(Math.random() * 500 + 2); //速度 值越大越慢
         item.style.left = `${v}%`;
         item.style.top = `${h}px`;
         let num = Math.trunc(Math.random() * 6);
@@ -91,8 +91,8 @@ export default {
   left:0px;
   .meteor{
     position: absolute;
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     top: 10px;
     left:30px;
   }
