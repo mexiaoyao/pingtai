@@ -44,6 +44,12 @@
             <div style="width:500px; height:100px;">
               <about />
             </div>
+            <div style="width:500px; height:100px; margin-top: 20px;">
+              <Philosophy />
+            </div>
+            <div style="width:500px; height:100px; margin-top: 20px;">
+              <LetterFromC3U />
+            </div>
           </a-row>
           <a-row :gutter="[16, 16]">
             <a-col :span="12">
@@ -71,12 +77,16 @@
 import HeaderBox from '@/components/header'
 import LiCor from '@/components/liColor'
 import About from '@/components/letter/About'
+import Philosophy from '@/components/letter/Philosophy'
+import LetterFromC3U from '@/components/letter/LetterFromC3U'
 export default {
   name: 'page',
   components: {
     HeaderBox,
     LiCor,
-    About
+    About,
+    Philosophy,
+    LetterFromC3U
   },
   data() {
     return {
