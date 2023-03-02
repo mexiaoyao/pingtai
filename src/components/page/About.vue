@@ -6,22 +6,21 @@
             </div>
         </a-row>
         <a-row :gutter="[16, 16]">
-            <a-col :span="12">
-                <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
-                    <template v-for="(item, index) in list">
-                        <a-list-item :key="index"><span class="c_white">{{ index + 1 }}、{{ item.title
-                        }}</span></a-list-item>
-                    </template>
-                </a-list>
-            </a-col>
-            <a-col :span="12">
-                <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
-                    <template v-for="(item, index) in list1">
-                        <a-list-item :key="index"><span class="c_white">{{ index + 1 }}、{{ item.title
-                        }}</span></a-list-item>
-                    </template>
-                </a-list>
-            </a-col>
+            <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
+                <template v-for="(item, index) in list">
+                    <a-list-item :key="index">
+                        <a-row :gutter="[16, 16]">
+                            <a-col :span="12">
+                                <span class="f_S_16 c_white font_weiruanyahei">{{ item.en}}</span>
+                            </a-col>
+                            <a-col :span="12">
+                                <span class="f_S_16 c_white font_weiruanyahei">{{ item.cn}}</span>
+                            </a-col>
+
+                        </a-row>
+                    </a-list-item>
+                </template>
+            </a-list>
         </a-row>
     </div>
 </template>
@@ -35,28 +34,14 @@ export default {
     data() {
         return {
             list: [
-                { title: "3月下旬到4月上旬，江南、江淮、江汉一带的农田逐渐热闹起来" },
-                { title: "月的西北地区虽然还是春寒料峭，但土豆、春小麦的播种已经率先开始了" },
-                { title: "4月中下旬，春天大踏步北上" },
-                { title: "春播看天时 今春气象条件总体利于春耕春播" },
-                { title: "2023全国春播地图出炉 一图看春播的进度条到哪了" },
-                { title: "春为岁首，农为先行。进入雨水节气，草木萌动，万物复苏，一年一度的春耕春播正由南到北在祖国大地上展开。" },
-                { title: "全国春播地图 看大江南北春播差异有多大" },
-                { title: "春播一粒粟，秋收万颗子。春播是全年农业生产的第一战，春播粮食面积占全年的一半以上，对全年粮食生产供给起着决定性作用。" },
-                { title: "根据中国天气网发布的2023全国春播地图可以看出，今年我国春播在2月下旬陆续开始，由南至北持续至5月上中旬。" },
-                { title: "华南是我国春播开始最早的地区，海南岛、台湾岛两大宝岛" },
-            ],
-            list1: [
-                { title: "春播一粒粟，秋收万颗子。春播是全年农业生产的第一战，春播粮食面积占全年的一半以上，对全年粮食生产供给起着决定性作用。" },
-                { title: "根据中国天气网发布的2023全国春播地图可以看出，今年我国春播在2月下旬陆续开始，由南至北持续至5月上中旬。" },
-                { title: "华南是我国春播开始最早的地区，海南岛、台湾岛两大宝岛" },
-                { title: "3月下旬到4月上旬，江南、江淮、江汉一带的农田逐渐热闹起来" },
-                { title: "月的西北地区虽然还是春寒料峭，但土豆、春小麦的播种已经率先开始了" },
-                { title: "4月中下旬，春天大踏步北上" },
-                { title: "春播看天时 今春气象条件总体利于春耕春播" },
-                { title: "2023全国春播地图出炉 一图看春播的进度条到哪了" },
-                { title: "春为岁首，农为先行。进入雨水节气，草木萌动，万物复苏，一年一度的春耕春播正由南到北在祖国大地上展开。" },
-                { title: "全国春播地图 看大江南北春播差异有多大" },
+                {
+                    en: "C3U backs next-gen Internet companies with disruptive technologies to define the future. Our focus is early-stage, Asian teams, and global footprint. We aim to et involved at the earliest stages of formation and continue supporting our portfolio companies.",
+                    cn: "C3U 支持拥有定义未来的颠覆性技术的下一代互联网公司。我们重点关注早期阶段、亚洲团队和全球足迹。我们希望在公司成立的最早阶段就参与进来，并持续支持他们的发展。 " 
+                },
+                {
+                    en: "We are a young-gen team to bridge the gap between web2 and web3. Kevin Wang (Linkedin) received his Master in Information System Management from Carnegie Mellon University, and spent nearly 10 years working in Silicon Valley as a Tech/product lead roles. Since 2017, Kevin joined Alibaba group and firstly worked with Ant Group for southeastern expansion . He turned to an investor by joining Alibaba strategic investment group and leading oversea web3.0/crypto investments. Kevin is deeply connected to Silicon Valley and Chinese IT industry through his time at tech companies in Bay area and Ant Group. He has developed a global perspective in web3 through leading web3 investments at Alibaba.",
+                    cn: "我们是一个致力于融合 web2 和 web3 之间发展的年轻团队。 王琦 (Linkedin) 从卡内基梅隆大学获得信息系统管理硕士学位，并在硅谷工作了近 10 年，担任技术/产品负责人。 2017年加入阿里巴巴集团，前期在蚂蚁集团负责东南亚业务拓展，后加入阿里巴巴战略投资集团，主导海外web3.0/crypto投资。 Kevin 在湾区科技公司和蚂蚁集团任职期间，与硅谷和中国 IT 行业建立了深厚的链接，通过在阿里巴巴主导 web3 投资形成了在 web3 领域的全球视野。 " 
+                },
             ],
         };
     },

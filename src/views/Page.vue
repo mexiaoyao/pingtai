@@ -12,13 +12,13 @@
           <a-row class="m_t_15">
             <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false" class="m_l_20">
               <a-list-item>
-                <h2 class="c_white cursor-por font_hanyifenggukaiti" @click="show = 1">Letter from C3U</h2>
+                <h2 class="c_white cursor-por font_weiruanyahei" @click="show = 1">Letter from C3U</h2>
               </a-list-item>
               <a-list-item>
-                <h2 class="c_white cursor-por" @click="show = 2">Philosophy</h2>
+                <h2 class="c_white cursor-por font_weiruanyahei" @click="show = 2">Philosophy</h2>
               </a-list-item>
               <a-list-item>
-                <h2 class="c_white cursor-por" @click="show = 3">About</h2>
+                <h2 class="c_white cursor-por font_weiruanyahei" @click="show = 3">About</h2>
               </a-list-item>
             </a-list>
           </a-row>
@@ -26,13 +26,13 @@
           <a-row class="m_t_15">
             <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
               <a-list-item>
-                <p class="c_white"><a-icon type="twitter" /> Twitter</p>
+                <p class="c_a6a6a6 font_weiruanyahei"><a-icon type="twitter" /> Twitter</p>
               </a-list-item>
               <a-list-item>
-                <p class="c_white"><a-icon type="wechat" /> WeChat</p>
+                <p class="c_a6a6a6 font_weiruanyahei"><a-icon type="wechat" /> WeChat</p>
               </a-list-item>
               <a-list-item>
-                <p class="c_white"><a-icon type="qq" /> Contact</p>
+                <p class="c_a6a6a6 font_weiruanyahei"><a-icon type="qq" /> Contact</p>
               </a-list-item>
             </a-list>
           </a-row>

@@ -6,22 +6,20 @@
             </div>
         </a-row>
         <a-row :gutter="[16, 16]">
-            <a-col :span="12">
-                <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
-                    <template v-for="(item, index) in list">
-                        <a-list-item :key="index"><span class="c_white">{{ index + 1 }}、{{ item.title
-                        }}</span></a-list-item>
-                    </template>
-                </a-list>
-            </a-col>
-            <a-col :span="12">
-                <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
-                    <template v-for="(item, index) in list1">
-                        <a-list-item :key="index"><span class="c_white">{{ index + 1 }}、{{ item.title
-                        }}</span></a-list-item>
-                    </template>
-                </a-list>
-            </a-col>
+            <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
+                <template v-for="(item, index) in list">
+                    <a-list-item :key="index">
+                        <a-row :gutter="[16, 16]">
+                            <a-col :span="12">
+                                <span class="f_S_16 c_white font_weiruanyahei">{{ item.en}}</span>
+                            </a-col>
+                            <a-col :span="12">
+                                <span class="f_S_16 c_white font_weiruanyahei">{{ item.cn}}</span>
+                            </a-col>
+                        </a-row>
+                    </a-list-item>
+                </template>
+            </a-list>
         </a-row>
     </div>
 </template>
@@ -35,29 +33,14 @@ export default {
     data() {
         return {
             list: [
-                { title: "2023全国春播地图出炉 一图看春播的进度条到哪了" },
-                { title: "春为岁首，农为先行。进入雨水节气，草木萌动，万物复苏，一年一度的春耕春播正由南到北在祖国大地上展开。" },
-                { title: "全国春播地图 看大江南北春播差异有多大" },
-                { title: "3月下旬到4月上旬，江南、江淮、江汉一带的农田逐渐热闹起来" },
-                { title: "月的西北地区虽然还是春寒料峭，但土豆、春小麦的播种已经率先开始了" },
-                { title: "4月中下旬，春天大踏步北上" },
-                { title: "春播看天时 今春气象条件总体利于春耕春播" },
-                { title: "春播一粒粟，秋收万颗子。春播是全年农业生产的第一战，春播粮食面积占全年的一半以上，对全年粮食生产供给起着决定性作用。" },
-                { title: "根据中国天气网发布的2023全国春播地图可以看出，今年我国春播在2月下旬陆续开始，由南至北持续至5月上中旬。" },
-                { title: "华南是我国春播开始最早的地区，海南岛、台湾岛两大宝岛" },
-
-            ],
-            list1: [
-                { title: "春播看天时 今春气象条件总体利于春耕春播" },
-                { title: "2023全国春播地图出炉 一图看春播的进度条到哪了" },
-                { title: "春为岁首，农为先行。进入雨水节气，草木萌动，万物复苏，一年一度的春耕春播正由南到北在祖国大地上展开。" },
-                { title: "全国春播地图 看大江南北春播差异有多大" },
-                { title: "华南是我国春播开始最早的地区，海南岛、台湾岛两大宝岛" },
-                { title: "3月下旬到4月上旬，江南、江淮、江汉一带的农田逐渐热闹起来" },
-                { title: "月的西北地区虽然还是春寒料峭，但土豆、春小麦的播种已经率先开始了" },
-                { title: "4月中下旬，春天大踏步北上" },
-                { title: "春播一粒粟，秋收万颗子。春播是全年农业生产的第一战，春播粮食面积占全年的一半以上，对全年粮食生产供给起着决定性作用。" },
-                { title: "根据中国天气网发布的2023全国春播地图可以看出，今年我国春播在2月下旬陆续开始，由南至北持续至5月上中旬。" },
+                {
+                    en: "The journey began with an unplanned meeting in Xiamen, China. The first time I met Kevin we reached a consensus that more and more Asian founders build startups globally, and Asian market is increasingly embracing the third generation of Internet development. Kevin, who has lived in Silicon Valley and Southeast Asia for many years, and I, who have worked in Singapore and Japan markets, realize that we can do something to support these entrepreneurs participate in the next era of ‘Internet migration’. ",
+                    cn: "故事的开始源于在厦门一次未经安排的见面。那是我第一次见到Kevin，在那次短暂的交流中我们很快达成共识，越来越多的亚洲创业者希望到海外发展项目，亚洲市场也在积极拥抱互联网的第三次新发展。在硅谷和东南亚生活多年的Kevin,和有着新加坡与日本工作经历的我，意识到我们可以做些什么去支持创业者们参与到下一个互联网发展的大迁徙时代。"
+                },
+                {
+                    en: "Some people's trust needs to be built on the basis of years, and some people's trust needs to be built on the basis of \"heart\". Kevin and I are naturally willing to trust others. Investment is based on \"belief\", same for partnership. We built trust in each other, the idea of starting C3U came to our minds. I name the fund C3U - ‘I see you in a new Web’. Making investment is a ‘hit-it-off’ moment, I ‘see’ you in my eyes and decide ",
+                    cn: "有些人的信任是需要以年为单位来建立，游戏人的信任是需要以“心”为单位来建立。 Kevin和我都是天然地愿意去相信他人，投资以“信”为本，识人亦如此。我们建立了对彼此的信任，成立C3U的想法开始构建。我给新基金取名为C3U – “I SEE you in a new Web”, 它融合了“缘分‘、’信任‘和对互联网新迭代的无限期许。我们的经历和认知指引我们去把C3Uj建立成为这样一个社群：" 
+                },
             ],
         };
     },
