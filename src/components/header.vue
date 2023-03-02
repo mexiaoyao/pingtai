@@ -3,7 +3,7 @@
     <div class="log_head m_l_05">
       <C3u />
     </div>
-    <div class="f_S_16 l_h_20 f_f_wryh c_white">
+    <div class="f_S_16 l_h_20 f_f_wryh c_white m_t_10">
       I SEE you in a new web
     </div>
   </div>
@@ -22,8 +22,8 @@ export default {
   height: 100%;
 
   .log_head {
-    width: 160px;
-    height: calc(100% - 20px);
+    width: 140px;
+    height: calc(100% - 30px);
   }
 }
 </style>

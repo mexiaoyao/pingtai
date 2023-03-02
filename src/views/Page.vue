@@ -26,13 +26,13 @@
           <a-row class="m_t_15">
             <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
               <a-list-item>
-                <p class="c_a6a6a6 font_weiruanyahei"><a-icon type="twitter" /> Twitter</p>
+                <a-space><a-icon type="twitter" style="color: #00ffff; border: 1px solid #00ffff;border-radius: 2px;padding:1px 2px;" /><span class="c_a6a6a6 font_weiruanyahei">Twitter</span></a-space>
               </a-list-item>
               <a-list-item>
-                <p class="c_a6a6a6 font_weiruanyahei"><a-icon type="wechat" /> WeChat</p>
+                <a-space><a-icon type="wechat" style="color: #00ff00; border: 1px solid #00ff00;border-radius: 2px;padding:1px 2px;" /><span class="c_a6a6a6 font_weiruanyahei">WeChat</span></a-space>
               </a-list-item>
               <a-list-item>
-                <p class="c_a6a6a6 font_weiruanyahei"><a-icon type="qq" /> Contact</p>
+                <a-space><a-icon type="mail" style="color: #780808; border: 1px solid #780808;border-radius: 2px;padding:1px 2px;" /><span class="c_a6a6a6 font_weiruanyahei">Contact</span></a-space>
               </a-list-item>
             </a-list>
           </a-row>
@@ -98,11 +98,11 @@ export default {
 
   .header {
     width: 94%;
-    height: 105px;
+    height: 115px;
     position: absolute;
     left: 0px;
-    top: 0px;
-    padding: 15px 3% 15px 3%;
+    top: 20px;
+    padding: 15px 3% 0px 3%;
 
     .box {
       width: 100%;
@@ -112,10 +112,10 @@ export default {
 
   .content {
     width: 94%;
-    height: calc(100% - 120px);
+    height: calc(100% - 160px);
     position: absolute;
     left: 0px;
-    top: 120px;
+    top: 160px;
     padding: 0px 3%;
 
     .title {
