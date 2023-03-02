@@ -1,34 +1,37 @@
 <template>
-  <div class="w_100_p h_100_p">
-    <div class="philosophy_cell">
-      <cell :backColorList="PCss" />
-    </div>
-    <div class="philosophy_cell">
-      <cell :backColorList="hCss" />
-    </div>
-    <div class="philosophy_cell">
-      <cell :backColorList="iCss" />
-    </div>
-    <div class="philosophy_cell">
-      <cell :backColorList="lCss" />
-    </div>
-    <div class="philosophy_cell">
-      <cell :backColorList="oCss" />
-    </div>
-    <div class="philosophy_cell">
-      <cell :backColorList="sCss" />
-    </div>
-    <div class="philosophy_cell">
-      <cell :backColorList="oCss" />
-    </div>
-    <div class="philosophy_cell">
-      <cell :backColorList="pCss" />
-    </div>
-    <div class="philosophy_cell">
-      <cell :backColorList="hCss" />
-    </div>
-    <div class="philosophy_cell">
-      <cell :backColorList="yCss" />
+  <div>
+    <h1 class="font_hanyizhegnyuan c_white">Philosophy</h1>
+    <div class="w_100_p h_100_p" v-if="false">
+      <div class="philosophy_cell">
+        <cell :backColorList="PCss" />
+      </div>
+      <div class="philosophy_cell">
+        <cell :backColorList="hCss" />
+      </div>
+      <div class="philosophy_cell">
+        <cell :backColorList="iCss" />
+      </div>
+      <div class="philosophy_cell">
+        <cell :backColorList="lCss" />
+      </div>
+      <div class="philosophy_cell">
+        <cell :backColorList="oCss" />
+      </div>
+      <div class="philosophy_cell">
+        <cell :backColorList="sCss" />
+      </div>
+      <div class="philosophy_cell">
+        <cell :backColorList="oCss" />
+      </div>
+      <div class="philosophy_cell">
+        <cell :backColorList="pCss" />
+      </div>
+      <div class="philosophy_cell">
+        <cell :backColorList="hCss" />
+      </div>
+      <div class="philosophy_cell">
+        <cell :backColorList="yCss" />
+      </div>
     </div>
   </div>
 </template>
@@ -37,7 +40,7 @@
 import cellMixins from './mixins/index';
 import Cell from './Cell.vue'
 export default {
-  name: 'c3u',
+  name: 'Philosophy',
   mixins: [cellMixins],
   components: {
     Cell

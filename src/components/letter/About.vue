@@ -1,19 +1,22 @@
 <template>
-  <div class="w_100_p h_100_p">
-    <div class="about_cell about">
-      <cell :backColorList="ACss" />
-    </div>
-    <div class="about_cell">
-      <cell :backColorList="bCss" />
-    </div>
-    <div class="about_cell">
-      <cell :backColorList="oCss" />
-    </div>
-    <div class="about_cell">
-      <cell :backColorList="uCss" />
-    </div>
-    <div class="about_cell">
-      <cell :backColorList="tCss" />
+  <div>
+    <h1 class="font_hanyizhegnyuan c_white">About</h1>
+    <div class="w_100_p h_100_p" v-if="false">
+      <div class="about_cell about">
+        <cell :backColorList="ACss" />
+      </div>
+      <div class="about_cell">
+        <cell :backColorList="bCss" />
+      </div>
+      <div class="about_cell">
+        <cell :backColorList="oCss" />
+      </div>
+      <div class="about_cell">
+        <cell :backColorList="uCss" />
+      </div>
+      <div class="about_cell">
+        <cell :backColorList="tCss" />
+      </div>
     </div>
   </div>
 </template>
