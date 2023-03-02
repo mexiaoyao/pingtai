@@ -1,5 +1,5 @@
 <template>
-  <div class="log_box">
+  <div class="log_box cursor-por" @click="$router.push('/')">
     <div class="log_head m_l_05">
       <C3u />
     </div>
