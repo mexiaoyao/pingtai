@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <h1 class="font_hanyizhegnyuan c_white">About</h1>
-    <div class="w_100_p h_100_p" v-if="false">
-      <div class="about_cell about">
+    <div class="w_100_p h_100_p">
+      <div class="about_cell">
         <cell :backColorList="ACss" />
       </div>
       <div class="about_cell">
@@ -17,7 +15,6 @@
       <div class="about_cell">
         <cell :backColorList="tCss" />
       </div>
-    </div>
   </div>
 </template>
 
@@ -59,8 +56,9 @@ export default {
 </script>
 <style scoped lang="less">
 .about_cell {
-  width: calc(94% / 5);
+  width: calc( (94% - 25px) / 5);
   height: 100%;
   float: left;
+  margin-right: 5px;
 }
 </style>

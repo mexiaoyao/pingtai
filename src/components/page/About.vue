@@ -1,9 +1,10 @@
 <template>
     <div>
         <a-row>
-            <div style="width:500px; height:100px;">
+            <div style="width:200px; height:50px;">
                 <about />
             </div>
+            <div class="title_botom_bor m_t_20 m_b_20"></div>
         </a-row>
         <a-row :gutter="[16, 16]">
             <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
