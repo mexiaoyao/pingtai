@@ -12,9 +12,9 @@
           style="font-size: 16px;" />
       </div>
       <div class="button_cor">
-        <div class="c_ff0101"></div>
-        <div class="c_00fe00"></div>
-        <div class="c_0001fc"></div>
+        <div class="c_b_ff0101"></div>
+        <div class="c_b_00fe00"></div>
+        <div class="c_b_0001fc"></div>
       </div>
     </div>
   </div>

@@ -1,5 +1,6 @@
 import Vue from "vue";
-import Antd from "ant-design-vue";
+//import Antd from "ant-design-vue";
+import Antd from "./lib/ant.js";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
@@ -8,8 +9,8 @@ import "./assets/less/main.less";
 
 import "ant-design-vue/dist/antd.css";
 
-import vuescroll from "vuescroll";//引入vuescroll
-import "vuescroll/dist/vuescroll.css";//引入vuescroll样式
+import vuescroll from "vuescroll"; //引入vuescroll
+import "vuescroll/dist/vuescroll.css"; //引入vuescroll样式
 
 //console.log('版本:'+ require('../package.json').version)
 
@@ -17,7 +18,7 @@ import "vuescroll/dist/vuescroll.css";//引入vuescroll样式
 Vue.config.productionTip = false;
 
 Vue.use(Antd);
-Vue.use(vuescroll);//使用
+Vue.use(vuescroll); //使用
 
 new Vue({
   router,

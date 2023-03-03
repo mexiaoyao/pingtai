@@ -26,13 +26,19 @@
           <a-row class="m_t_15">
             <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
               <a-list-item>
-                <a-space><a-icon type="twitter" style="color: #00ffff; border: 1px solid #00ffff;border-radius: 2px;padding:1px 2px;" /><span class="c_a6a6a6 font_weiruanyahei">Twitter</span></a-space>
+                <a-space><a-icon type="twitter"
+                    style="color: #00ffff; border: 1px solid #00ffff;border-radius: 2px;padding:1px 2px;" /><span
+                    class="c_a6a6a6 font_weiruanyahei">Twitter</span></a-space>
               </a-list-item>
               <a-list-item>
-                <a-space><a-icon type="wechat" style="color: #00ff00; border: 1px solid #00ff00;border-radius: 2px;padding:1px 2px;" /><span class="c_a6a6a6 font_weiruanyahei">WeChat</span></a-space>
+                <a-space><a-icon type="wechat"
+                    style="color: #00ff00; border: 1px solid #00ff00;border-radius: 2px;padding:1px 2px;" /><span
+                    class="c_a6a6a6 font_weiruanyahei">WeChat</span></a-space>
               </a-list-item>
               <a-list-item>
-                <a-space><a-icon type="mail" style="color: #780808; border: 1px solid #780808;border-radius: 2px;padding:1px 2px;" /><span class="c_a6a6a6 font_weiruanyahei">Contact</span></a-space>
+                <a-space><a-icon type="mail"
+                    style="color: #780808; border: 1px solid #780808;border-radius: 2px;padding:1px 2px;" /><span
+                    class="c_a6a6a6 font_weiruanyahei">Contact</span></a-space>
               </a-list-item>
             </a-list>
           </a-row>
