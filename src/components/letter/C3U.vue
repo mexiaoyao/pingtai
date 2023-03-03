@@ -4,7 +4,7 @@
       <cell :backColorList="cCss" />
     </div>
     <div class="c3u_cell">
-      <cell :backColorList="sCss" />
+      <cell :backColorList="s3Css" />
     </div>
     <div class="c3u_cell">
       <cell :backColorList="uCss" />
@@ -22,75 +22,17 @@ export default {
   },
   mixins: [cellMixins],
   data() {
-    return {
-      cCss: [],
-      cNumList: [
-        1, 2, 3,
-        5, 9,
-        10,
-        15,
-        20,
-        25, 29,
-        31, 32, 33
-      ],
-      setColr_c: [
-        { num: 5, color: "#00fe00" },
-        { num: 9, color: "#ff0101" },
-        { num: 33, color: "#0001fc" }
-      ],
-
-      sCss: [],
-      sNumList: [
-        1, 2, 3, 4,
-        8,
-        12,
-        16, 17, 18,
-        24,
-        25, 29,
-        31, 32, 33
-      ],
-      setColr_s: [
-        { num: 5, color: "#0001fc" },
-        { num: 17, color: "#ff0101" },
-        { num: 26, color: "#00fe00" }
-      ],
-
-      uCss: [],
-      uNumList: [
-        0, 4,
-        5, 9,
-        10, 14,
-        15, 19,
-        20, 24,
-        25, 29,
-        31, 32, 33
-      ],
-      setColr_u: [
-        { num: 1, color: "#00fe00" },
-        { num: 32, color: "#ff0101" },
-      ],
-    }
+    return {}
   },
   created() {
     this.createC()
   },
   methods: {
     createC() {
-      this.cCss = [];
-      this.sCss = [];
-      this.uCss = [];
-
-      let cColorList = this.setColorList(this.cNumList, this.setColr_c)
-      this.createLetter(this.cNumList, cColorList, this.cCss);
-      this.createMake(this.cNumList, cColorList, this.cCss);
-
-      let sColorList = this.setColorList(this.sNumList, this.setColr_s)
-      this.createLetter(this.sNumList, sColorList, this.sCss);
-      this.createMake(this.sNumList, sColorList, this.sCss);
-
-      let uColorList = this.setColorList(this.uNumList, this.setColr_u)
-      this.createLetter(this.uNumList, uColorList, this.uCss);
-      this.createMake(this.uNumList, uColorList, this.uCss);
+      Object.assign(this.$data, this.$options.data());
+      this.creatWord(this.setColr_c, this.cNumList, this.cCss);
+      this.creatWord(this.setColr_s3, this.s3NumList, this.s3Css);
+      this.creatWord(this.setColr_u, this.uNumList, this.uCss);
     },
 
   }

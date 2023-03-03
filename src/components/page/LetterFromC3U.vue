@@ -1,9 +1,10 @@
 <template>
     <div>
         <a-row>
-            <div style="width:500px; height:100px; margin-top: 20px;">
+            <div style="width:300px; height:100px; margin-top: 20px;">
                 <LetterFromC3U />
             </div>
+            <div class="title_botom_bor m_t_20 m_b_20"></div>
         </a-row>
         <a-row :gutter="[16, 16]">
             <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
@@ -11,10 +12,10 @@
                     <a-list-item :key="index">
                         <a-row :gutter="[16, 16]">
                             <a-col :span="12">
-                                <span class="f_S_16 c_white font_weiruanyahei">{{ item.en}}</span>
+                                <span class="f_S_16 c_white font_weiruanyahei">{{ item.en }}</span>
                             </a-col>
                             <a-col :span="12">
-                                <span class="f_S_16 c_white font_weiruanyahei">{{ item.cn}}</span>
+                                <span class="f_S_16 c_white font_weiruanyahei">{{ item.cn }}</span>
                             </a-col>
                         </a-row>
                     </a-list-item>
@@ -39,7 +40,7 @@ export default {
                 },
                 {
                     en: "Some people's trust needs to be built on the basis of years, and some people's trust needs to be built on the basis of \"heart\". Kevin and I are naturally willing to trust others. Investment is based on \"belief\", same for partnership. We built trust in each other, the idea of starting C3U came to our minds. I name the fund C3U - ‘I see you in a new Web’. Making investment is a ‘hit-it-off’ moment, I ‘see’ you in my eyes and decide ",
-                    cn: "有些人的信任是需要以年为单位来建立，游戏人的信任是需要以“心”为单位来建立。 Kevin和我都是天然地愿意去相信他人，投资以“信”为本，识人亦如此。我们建立了对彼此的信任，成立C3U的想法开始构建。我给新基金取名为C3U – “I SEE you in a new Web”, 它融合了“缘分‘、’信任‘和对互联网新迭代的无限期许。我们的经历和认知指引我们去把C3Uj建立成为这样一个社群：" 
+                    cn: "有些人的信任是需要以年为单位来建立，游戏人的信任是需要以“心”为单位来建立。 Kevin和我都是天然地愿意去相信他人，投资以“信”为本，识人亦如此。我们建立了对彼此的信任，成立C3U的想法开始构建。我给新基金取名为C3U – “I SEE you in a new Web”, 它融合了“缘分‘、’信任‘和对互联网新迭代的无限期许。我们的经历和认知指引我们去把C3Uj建立成为这样一个社群："
                 },
             ],
         };
