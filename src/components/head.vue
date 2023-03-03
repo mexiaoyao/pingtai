@@ -12,7 +12,7 @@
 <script>
 import C3u from '@/components/letter/C3U.vue'
 export default {
-  name: "header",
+  name: "head-log",
   components: { C3u },
 };
 </script>

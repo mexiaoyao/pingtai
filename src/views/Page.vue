@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import HeaderBox from '@/components/header'
+import HeaderBox from '@/components/head'
 import LiCor from '@/components/liColor'
 import AboutPage from '@/components/page/About'
 import PhilosophyPage from '@/components/page/Philosophy'
