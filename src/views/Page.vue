@@ -10,7 +10,7 @@
         <vue-scroll :ops="ops" class="w_100_p h_100_p">
           <a-row class="title"><li-cor :list="[1, 3, 2]" /></a-row>
           <a-row class="m_t_15">
-            <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false" class="m_l_20">
+            <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
               <a-list-item>
                 <h2 class="c_white cursor-por font_weiruanyahei" @click="show = 1">Letter from C3U</h2>
               </a-list-item>

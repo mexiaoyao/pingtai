@@ -5,7 +5,8 @@ import Router from "vue-router";
 Vue.use(Router);
 
 export default new Router({
-  mode: "history",
+  //mode: "history",
+  mode: 'hash', //对应刷新后404处理
   base: process.env.BASE_URL,
   routes: [
     {
