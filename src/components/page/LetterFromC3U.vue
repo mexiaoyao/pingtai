@@ -6,16 +6,16 @@
             </div>
             <div class="title_botom_bor m_t_20 m_b_20"></div>
         </a-row>
-        <a-row :gutter="[16, 16]">
+        <a-row :gutter="[16, 2]" class="list_new_bottom">
             <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
                 <template v-for="(item, index) in list">
                     <a-list-item :key="index">
-                        <a-row :gutter="[16, 16]">
+                        <a-row :gutter="[16, 0]">
                             <a-col :span="12">
-                                <span class="f_S_16 c_white font_weiruanyahei">{{ item.en }}</span>
+                                <p class="f_S_16 c_white font_weiruanyahei font_text_indent_2em l_h_36 p_b_0 m_b_0">{{ item.en }}</p>
                             </a-col>
                             <a-col :span="12">
-                                <span class="f_S_16 c_white font_weiruanyahei">{{ item.cn }}</span>
+                                <p class="f_S_16 c_white font_weiruanyahei font_text_indent_2em l_h_36 p_b_0 m_b_0">{{ item.cn }}</p>
                             </a-col>
                         </a-row>
                     </a-list-item>
@@ -47,3 +47,10 @@ export default {
     },
 };
 </script>
+<style lang="less">
+.list_new_bottom{
+    .ant-list-grid .ant-col > .ant-list-item{
+        margin-bottom: 0px;
+    }
+}
+</style>

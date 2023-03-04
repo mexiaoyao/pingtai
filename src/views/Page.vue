@@ -6,7 +6,7 @@
       </div>
     </a-row>
     <a-row class="content">
-      <a-col :span="6" class="h_100_p">
+      <div class="h_100_p pdtp left fl">
         <vue-scroll :ops="ops" class="w_100_p h_100_p">
           <a-row class="title"><li-cor :list="[1, 3, 2]" /></a-row>
           <a-row class="m_t_15">
@@ -43,14 +43,14 @@
             </a-list>
           </a-row>
         </vue-scroll>
-      </a-col>
-      <a-col :span="18" class="h_100_p">
+      </div>
+      <div class="h_100_p right fr">
         <vue-scroll :ops="ops" class="w_100_p h_100_p">
           <LetterFromc3u-page v-if="show == 1" />
           <philosophy-page v-if="show == 2" />
           <about-page v-if="show == 3" />
         </vue-scroll>
-      </a-col>
+      </div>
     </a-row>
   </div>
 </template>
@@ -103,7 +103,7 @@ export default {
   position: relative;
 
   .header {
-    width: 94%;
+    width: 100%;
     height: 115px;
     position: absolute;
     left: 0px;
@@ -117,27 +117,28 @@ export default {
   }
 
   .content {
-    width: 94%;
+    width: 100%;
     height: calc(100% - 160px);
     position: absolute;
     left: 0px;
     top: 160px;
     padding: 0px 3%;
+    .pdtp{
+      padding-top: 3%;
+    }
+    .left{
+      width: 220px;
+    }
+    .right{
+      width: calc(100% - 220px);
+    }
 
     .title {
       width: 10px;
       height: 18px;
     }
 
-    // 滚动条位置
-    /deep/.__bar-is-vertical {
-      right: -1px !important;
-    }
-
-    // 隐藏横向滚动条
-    /deep/.__bar-is-horizontal {
-      display: none !important;
-    }
+    
   }
 }
 </style>
