@@ -24,9 +24,9 @@
       </div>
     </div>
     <!----FROM C3U-->
-    <div class="w_100_p h_50_p_5px m_t_10">
+    <div class="w_90_p h_50_p_5px m_t_10">
       <!----FROM-->
-      <div class="w_50_p h_100_p fl">
+      <div class="w_45_p h_100_p fl">
         <div class="w_100_p h_100_p">
           <div class="letterFromc3u_from_cell">
             <cell :backColorList="fCss" />
@@ -43,7 +43,7 @@
         </div>
       </div>
       <!----C3U-->
-      <div class="w_40_p h_100_p fr">
+      <div class="w_40_p h_100_p fl" style="margin-left: 6%;">
         <div class="w_100_p h_100_p">
           <div class="letterFromc3u_c3u_cell">
             <cell :backColorList="cCss" />
