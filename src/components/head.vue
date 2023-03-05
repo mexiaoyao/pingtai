@@ -26,4 +26,10 @@ export default {
     height: calc(100% - 30px);
   }
 }
+@media screen and (max-width: 500px){
+  .log_head {
+    width: 100px;
+    height: calc(100% - 10px);
+  }
+}
 </style>

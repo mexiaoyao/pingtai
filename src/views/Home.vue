@@ -78,4 +78,32 @@ export default {
     }
   }
 }
+@media screen and (max-width: 576px){
+  .home {
+  .home_box {
+    width: 200px;
+    height: 100px;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+  }
+
+  .home_font {
+    width: 360px;
+    top: calc(50% + 30px);
+    left: calc(50% - 180px);
+    font: 26px/36px "黑体";
+  }
+
+  .enter_box {
+    width: 100px;
+    top: calc(50% + 100px);
+    left: calc(50% - 52px);
+
+    .button_cli {
+      font: 18px/32px "黑体";
+      padding: 2px 8px;
+    }
+  }
+}
+}
 </style>

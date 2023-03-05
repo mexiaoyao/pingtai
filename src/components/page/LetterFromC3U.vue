@@ -1,7 +1,7 @@
 <template>
     <div>
         <a-row>
-            <div style="width:300px; height:100px; margin-top: 20px;">
+            <div class="letter_from_c3u">
                 <LetterFromC3U />
             </div>
             <div class="title_botom_bor m_t_20 m_b_20"></div>
@@ -11,10 +11,10 @@
                 <template v-for="(item, index) in list">
                     <a-list-item :key="index">
                         <a-row :gutter="[16, 0]">
-                            <a-col :span="12">
+                            <a-col :span="12"  :xs="24">
                                 <p class="f_S_16 c_white font_weiruanyahei font_text_indent_2em l_h_36 p_b_0 m_b_0">{{ item.en }}</p>
                             </a-col>
-                            <a-col :span="12">
+                            <a-col :span="12" :xs="24">
                                 <p class="f_S_16 c_white font_weiruanyahei font_text_indent_2em l_h_36 p_b_0 m_b_0">{{ item.cn }}</p>
                             </a-col>
                         </a-row>
@@ -48,9 +48,17 @@ export default {
 };
 </script>
 <style lang="less">
+.letter_from_c3u{
+    width:300px; height:100px; margin-top: 20px;
+}
 .list_new_bottom{
     .ant-list-grid .ant-col > .ant-list-item{
         margin-bottom: 0px;
+    }
+}
+@media screen and (max-width: 576px){
+    .letter_from_c3u{
+        width:240px; height:80px; margin-top: 20px;
     }
 }
 </style>

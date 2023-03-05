@@ -72,7 +72,7 @@ export default {
   },
   data() {
     return {
-      show: 1,
+      show: 3,
       ops: {
         vuescroll: {},
         scrollPanel: {},
@@ -137,8 +137,41 @@ export default {
       width: 10px;
       height: 18px;
     }
-
-    
   }
+}
+@media screen and (max-width: 576px){
+  .page {
+  .header {
+    height: 100px;
+    top: 5px;
+    padding: 5px;
+    .box {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .content {
+    height: calc(100% - 100px);
+    top: 100px;
+    padding: 0px 10px;
+    .pdtp{
+      padding-top: 10px;
+    }
+    .left{
+      width: 180px;
+      position: absolute;
+      display: none;
+    }
+    .right{
+      width: 100%;
+    }
+
+    .title {
+      width: 10px;
+      height: 18px;
+    }
+  }
+}
 }
 </style>
