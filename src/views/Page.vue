@@ -4,6 +4,22 @@
       <div class="box">
         <header-box />
       </div>
+      <div class="head_menu">
+        <a-dropdown placement="bottomRight">
+          <a-icon type="small-dash" style="font-size: 48px; color: #FFF;" />
+          <a-menu slot="overlay">
+            <a-menu-item>
+              <div class="c_white" @click="show = 1">Letter from C3U</div>
+            </a-menu-item>
+            <a-menu-item>
+              <div class="c_white" @click="show = 2">Philosophy</div>
+            </a-menu-item>
+            <a-menu-item>
+              <div class="c_white" @click="show = 3">About</div>
+            </a-menu-item>
+          </a-menu>
+        </a-dropdown>
+      </div>
     </a-row>
     <a-row class="content">
       <div class="h_100_p pdtp left fl">
@@ -51,6 +67,11 @@
           <about-page v-if="show == 3" />
         </vue-scroll>
       </div>
+    </a-row>
+    <a-row class="w_100_p d_n t_c pos-ab m_b_c f_S_24" style="background-color: #000000; position: absolute;">
+      <a-col :span="8"><a-icon type="twitter" style="color: #00ffff;" /></a-col>
+      <a-col :span="8"><a-icon type="wechat" style="color: #00ff00;" /></a-col>
+      <a-col :span="8"><a-icon type="mail" style="color: #780808;" /></a-col>
     </a-row>
   </div>
 </template>
@@ -114,6 +135,9 @@ export default {
       width: 100%;
       height: 100%;
     }
+    .head_menu{
+      display: none;
+    }
   }
 
   .content {
@@ -122,7 +146,7 @@ export default {
     position: absolute;
     left: 0px;
     top: 160px;
-    padding: 0px 3%;
+    padding: 0px 3% 30px 3%;
     .pdtp{
       padding-top: 3%;
     }
@@ -140,6 +164,16 @@ export default {
   }
 }
 @media screen and (max-width: 576px){
+  .ant-dropdown-menu{background-color: #000000;}
+  .ant-dropdown-menu-item-active{
+    background-color: #333333;
+  }
+  .m_b_c{
+    left: 0; bottom: 0;
+  }
+  .d_n{
+
+  }
   .page {
   .header {
     height: 100px;
@@ -149,12 +183,21 @@ export default {
       width: 100%;
       height: 100%;
     }
+    .head_menu{
+      display: block;
+      color: #FFF;
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      text-align: right;
+      
+    }
   }
 
   .content {
     height: calc(100% - 100px);
     top: 100px;
-    padding: 0px 10px;
+    padding: 0px 10px 50px 10px;
     .pdtp{
       padding-top: 10px;
     }

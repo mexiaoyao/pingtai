@@ -1,6 +1,6 @@
 <template>
-  <div class="log_box cursor-por" @click="$router.push('/')">
-    <div class="log_head m_l_05">
+  <div class="log_box">
+    <div class="log_head m_l_05 cursor-por" @click="$router.push('/')">
       <C3u />
     </div>
     <div class="f_S_16 l_h_20 f_f_wryh c_white m_t_10">

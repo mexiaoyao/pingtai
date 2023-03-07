@@ -4,6 +4,7 @@
             <div class="letter_from_c3u">
                 <LetterFromC3U />
             </div>
+            <div class="m_h2">Letter From C3U</div>
             <div class="title_botom_bor m_t_20 m_b_20"></div>
         </a-row>
         <a-row :gutter="[16, 2]" class="list_new_bottom">
@@ -58,7 +59,7 @@ export default {
 }
 @media screen and (max-width: 576px){
     .letter_from_c3u{
-        width:240px; height:80px; margin-top: 20px;
+        display: none;
     }
 }
 </style>

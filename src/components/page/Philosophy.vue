@@ -4,6 +4,7 @@
             <div class="philosophy_te">
                 <Philosophy />
             </div>
+            <div class="m_h2">Philosophy</div>
             <div class="title_botom_bor m_t_20 m_b_20"></div>
         </a-row>
         <a-row :gutter="[16, 2]" class="list_new_bottom">
@@ -69,7 +70,7 @@ export default {
 }
 @media screen and (max-width: 576px){
     .philosophy_te{
-        width:260px; height:40px; margin-top: 20px;
+        display: none;
     }
 }
 </style>
