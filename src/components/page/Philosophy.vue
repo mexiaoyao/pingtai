@@ -1,21 +1,21 @@
 <template>
-    <div>
-        <a-row>
+    <div class="w_100_p">
+        <a-row class="w_100_p">
             <div class="philosophy_te">
                 <Philosophy />
             </div>
             <div class="m_h2">Philosophy</div>
             <div class="title_botom_bor m_t_20 m_b_20"></div>
         </a-row>
-        <a-row :gutter="[16, 2]" class="list_new_bottom">
+        <a-row :gutter="[16, 2]" class="w_100_p list_new_bottom">
             <a-list :grid="{ gutter: 16, column: 1 }" :bordered="false">
                 <template v-for="(item, index) in list">
                     <a-list-item :key="index">
                         <a-row :gutter="[16, 0]">
-                            <a-col :span="12"  :xs="24">
+                            <a-col :sm="12"  :xs="24">
                                 <p class="f_S_16 c_white font_weiruanyahei font_text_indent_2em l_h_36 p_b_0 m_b_0">{{ item.en }}</p>
                             </a-col>
-                            <a-col :span="12" :xs="24">
+                            <a-col :sm="12" :xs="24">
                                 <p class="f_S_16 c_white font_weiruanyahei font_text_indent_2em l_h_36 p_b_0 m_b_0">{{ item.cn }}</p>
                             </a-col>
 
