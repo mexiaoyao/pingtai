@@ -97,4 +97,26 @@ export default {
     left:30px;
   }
 }
+@media screen and (max-width: 576px){
+  @keyframes meteorAnim {
+  0% {
+    opacity: 1;
+    margin-top: 180%;
+  }
+  12% {
+    opacity: 0;
+  }
+  15% {
+    margin-top: -50%;
+    opacity: 0;
+  }
+  50% {
+    margin-top: -80%;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+}
 </style>
