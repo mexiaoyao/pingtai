@@ -93,7 +93,7 @@ export default {
   },
   data() {
     return {
-      show: 3,
+      show: 1,
       ops: {
         vuescroll: {},
         scrollPanel: {},
